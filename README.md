@@ -1,4 +1,9 @@
-# Support
+# TransformativeMed note
+The original author, https://github.com/fightbulc, is now a dad and no longer maintaining the package (congrats!). Another kind soul - https://github.com/blacknell, took it upon himself to fix the PHP 8 deprecation warnings.
+
+In order for our organization to upgrade to PHP 8, we need to publish blacknell's changes. This repo serves as the PHP 8 edge of the package.
+
+# Original Author's note
 
 I am a dad now for the last 1,5 years and that clearly shows in being on time with merging PRs or pushing this package further.
 Time is the biggest constraint here. I would be happy to pass the project on to somebody who has more time and the motivation to push the project forward.
