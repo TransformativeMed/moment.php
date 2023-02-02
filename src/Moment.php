@@ -14,7 +14,12 @@ class Moment extends \DateTime
     const NO_TZ_MYSQL = 'Y-m-d H:i:s';
     const NO_TZ_NO_SECS = 'Y-m-d H:i';
     const NO_TIME = 'Y-m-d';
-
+    
+    /**
+    * @var string
+    */
+    private static $defaultDateTime = 'now';
+        
     /**
      * @var string
      */
@@ -132,7 +137,11 @@ class Moment extends \DateTime
         {
             $timezone = self::$defaultTimezone;
         }
-
+        
+        if($dateTime === null) {
+            $dateTime = self::$defaultDateTime;    
+        }
+        
         // set moment
         MomentLocale::setMoment($this);
 
